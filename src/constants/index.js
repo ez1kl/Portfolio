@@ -86,26 +86,6 @@ const technologies = [
     name: 'React JS',
     icon: reactjs,
   },
-  // {
-  //   name: 'Redux Toolkit',
-  //   icon: redux,
-  // },
-  // {
-  //   name: 'Tailwind CSS',
-  //   icon: tailwind,
-  // },
-  // {
-  //   name: 'Node JS',
-  //   icon: nodejs,
-  // },
-  // {
-  //   name: 'Rails',
-  //   icon: rubyrails,
-  // },
-  // {
-  //   name: 'graphql',
-  //   icon: graphql,
-  // },
   {
     name: 'postgresql',
     icon: postgresql,
@@ -139,136 +119,33 @@ const experiences = [
     iconBg: '#333333',
     date: 'Nov 2023 - Sept 2024',
   },
-  // {
-  //   title: 'Junior Software Engineer',
-  //   company_name: 'Kelhel',
-  //   icon: kelhel,
-  //   iconBg: '#333333',
-  //   date: 'May 2022 - Oct 2022',
-  // },
-  // {
-  //   title: 'Full Stack Developer',
-  //   company_name: 'Diversity Cyber Council',
-  //   icon: dcc,
-  //   iconBg: '#333333',
-  //   date: 'Sep 2022 - Present',
-  // },
 ];
 
 const projects = [
   {
     id: 'project-1',
     name: 'Motus',
-    description: 'Un jeu de lettres inspiré du célèbre jeu Motus.',
-    // tags: [
-    //   {
-    //     name: 'react',
-    //     color: 'blue-text-gradient',
-    //   },
-    //   {
-    //     name: 'mongodb',
-    //     color: 'green-text-gradient',
-    //   },
-    //   {
-    //     name: 'tailwind',
-    //     color: 'pink-text-gradient',
-    //   },
-    // ],
+    description: 'Un jeu de lettres inspiré du célèbre jeu Motus, développé en C avec SDL2. Devinez le mot en un nombre limité d\'essais avec des indices visuels.',
     image: motus,
-
-    // repo: 'https://github.com/shaqdeff/KomiKult',
-    // demo: 'https://shaqdeff.github.io/KomiKult/',
+    repo: 'https://github.com/ez1kl/motus-game',
+    demo: 'https://ez1kl.github.io/motus-game/',
   },
   {
     id: 'project-2',
     name: 'Ransomware',
-    description:
-      'Un projet en asseumbleur x86 qui simule le fonctionnement d\'un ransomware.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
-    ],
+    description: 'Un projet en assembleur x86 qui simule le fonctionnement d\'un ransomware. Démonstration des techniques de chiffrement et de cybersécurité à des fins éducatives.',
     image: ransomware,
-    // repo: 'https://github.com/shaqdeff/Leaderboard',
-    // demo: 'https://shaqdeff.github.io/Leaderboard/',
+    repo: null,
+    demo: null,
   },
-  // {
-  //   id: 'project-3',
-  //   name: 'Math Magicians',
-  //   description: 'This is a single-page calculator app built with React',
-  //   tags: [
-  //     {
-  //       name: 'nextjs',
-  //       color: 'blue-text-gradient',
-  //     },
-  //     {
-  //       name: 'supabase',
-  //       color: 'green-text-gradient',
-  //     },
-  //     {
-  //       name: 'css',
-  //       color: 'pink-text-gradient',
-  //     },
-  //   ],
-  //   image: math,
-  //   repo: 'https://github.com/shaqdeff/Math-Magicians',
-  //   demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
-  // },
-  // {
-  //   id: 'project-4',
-  //   name: 'Movie Metro',
-  //   description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-  //   tags: [
-  //     {
-  //       name: 'nextjs',
-  //       color: 'blue-text-gradient',
-  //     },
-  //     {
-  //       name: 'supabase',
-  //       color: 'green-text-gradient',
-  //     },
-  //     {
-  //       name: 'css',
-  //       color: 'pink-text-gradient',
-  //     },
-  //   ],
-  //   image: movie,
-  //   repo: 'https://github.com/shaqdeff/Movie-Metro',
-  //   demo: 'https://movie-metro.netlify.app/',
-  // },
-  // {
-  //   id: 'project-5',
-  //   name: 'Nyeusi Fest Site',
-  //   description:
-  //     'This is a demo concert website for a music festival called Nyeusi.',
-  //   tags: [
-  //     {
-  //       name: 'nextjs',
-  //       color: 'blue-text-gradient',
-  //     },
-  //     {
-  //       name: 'supabase',
-  //       color: 'green-text-gradient',
-  //     },
-  //     {
-  //       name: 'css',
-  //       color: 'pink-text-gradient',
-  //     },
-  //   ],
-  //   image: nyeusi,
-  //   repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-  //   demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
-  // },
+  {
+    id: 'project-3',
+    name: 'Java Revolution',
+    description: 'Un RPG narratif interactif inspiré du "Livre dont vous êtes le héros". Plongez dans la France révolutionnaire de 1789 avec un système de combat et de sauvegarde.',
+    image: nyeusi,
+    repo: 'https://github.com/ez1kl/java-revolution',
+    demo: 'https://ez1kl.github.io/java-revolution/',
+  },
 ];
 
 export { services, technologies, experiences, projects };
