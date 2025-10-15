@@ -1,33 +1,47 @@
-# Portfolio Personnel
+# Portfolio
 
-Portfolio web moderne développé avec React, Three.js et TailwindCSS.
+Mon portfolio personnel présentant mes projets et compétences en développement web.
 
-## Technologies
+## À propos
 
-- React 18
-- Three.js
-- Framer Motion
-- TailwindCSS
-- Vite
+Site web interactif construit avec des animations 3D et une interface moderne. Présente mes expériences professionnelles, mes compétences techniques et quelques projets sur lesquels j'ai travaillé.
 
-## Installation
+## Stack technique
+
+- **React** - Framework JavaScript
+- **Three.js** - Animations et effets 3D
+- **Framer Motion** - Animations fluides
+- **TailwindCSS** - Styling
+- **Vite** - Build tool
+
+## Installation locale
+
+Cloner le projet et installer les dépendances :
 
 ```bash
 npm install
 ```
 
-## Développement
+Lancer le serveur de développement :
 
 ```bash
 npm run dev
 ```
 
-Le site sera accessible sur `http://localhost:5173/`
+Le site tourne sur `http://localhost:5173/`
 
-## Build
+## Build production
+
+Pour créer une version optimisée :
 
 ```bash
 npm run build
+```
+
+Prévisualiser la build :
+
+```bash
+npm run preview
 ```
 
 ## Licence
