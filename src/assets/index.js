@@ -51,6 +51,8 @@ import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
 import motus from './projects/motus.png';
 import ransomware from './projects/ransomware.png';
+import javarevolution from './projects/JavaRevolution.png';
+import sosafe from './projects/sosafe.png';
 
 export {
   bwmap,
@@ -91,6 +93,8 @@ export {
   komikult,
   motus,
   ransomware,
+  javarevolution,
+  sosafe,
   leaderboard,
   math,
   movie,

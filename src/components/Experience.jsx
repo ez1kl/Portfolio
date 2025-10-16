@@ -91,39 +91,32 @@ const Experience = () => {
                 />
               </div>
             }>
-            <button
-              className="live-demo flex justify-between 
-              sm:text-[18px] text-[14px] text-timberWolf 
-              font-bold font-beckman items-center py-5 pl-3 pr-3 
-              whitespace-nowrap gap-1 sm:w-[148px] sm:h-[58px] 
-              w-[125px] h-[46px] rounded-[10px] bg-jetLight 
-              sm:mt-[22px] mt-[16px] hover:bg-battleGray 
-              hover:text-eerieBlack transition duration-[0.2s] 
-              ease-in-out"
-              onClick={() =>
-                window.open(
-                  window.open('/CV.pdf', '_blank'),
-                  '_blank'
-                )
-              }
-              onMouseOver={() => {
-                document
-                  .querySelector('.download-btn')
-                  .setAttribute('src', downloadHover);
-              }}
-              onMouseOut={() => {
-                document
-                  .querySelector('.download-btn')
-                  .setAttribute('src', download);
-              }}>
-              Mon CV
-              <img
-                src={download}
-                alt="download"
-                className="download-btn sm:w-[26px] sm:h-[26px] 
-                w-[23px] h-[23px] object-contain"
-              />
-            </button>
+            <div className="relative group">
+              <button
+                className="live-demo flex justify-between 
+                sm:text-[18px] text-[14px] text-taupe 
+                font-bold font-beckman items-center py-5 pl-3 pr-3 
+                whitespace-nowrap gap-1 sm:w-[148px] sm:h-[58px] 
+                w-[125px] h-[46px] rounded-[10px] bg-jetLight 
+                sm:mt-[22px] mt-[16px] opacity-50 
+                cursor-not-allowed transition duration-[0.2s] 
+                ease-in-out"
+                disabled>
+                Mon CV
+                <img
+                  src={download}
+                  alt="download"
+                  className="download-btn sm:w-[26px] sm:h-[26px] 
+                  w-[23px] h-[23px] object-contain opacity-50"
+                />
+              </button>
+              <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2
+                bg-eerieBlack text-white text-xs font-semibold px-3 py-2 
+                rounded-md opacity-0 group-hover:opacity-100 
+                transition-opacity duration-300 whitespace-nowrap z-50">
+                Pas de recherche d'emploi en cours
+              </span>
+            </div>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>

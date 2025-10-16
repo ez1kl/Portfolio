@@ -2,7 +2,8 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { profile, bwmap, worldmap } from '../assets';
+import { profile, bwmap, worldmap, github } from '../assets';
+import linkedin from '../assets/icons/linkedin.svg';
 
 const Hero = () => {
   return (
@@ -49,6 +50,22 @@ const Hero = () => {
               Étudiant informatique <br className="sm:block hidden" />
               Je transforme la curiosité en compétences
             </p>
+            <div className="flex gap-4 mt-6">
+              <a
+                href="https://github.com/ez1kl"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-night flex justify-center items-center hover:bg-battleGray transition-colors duration-300">
+                <img src={github} alt="GitHub" className="w-7 h-7 object-contain" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/yassinebadaoui/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-night flex justify-center items-center hover:bg-battleGray transition-colors duration-300">
+                <img src={linkedin} alt="LinkedIn" className="w-7 h-7 object-contain" />
+              </a>
+            </div>
           </div>
           <div
             className="w-screen flex flex-col items-start 

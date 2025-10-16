@@ -20,6 +20,8 @@ import {
   komikult,
   motus,
   ransomware,
+  javarevolution,
+  sosafe,
   leaderboard,
   math,
   movie,
@@ -132,6 +134,14 @@ const projects = [
   },
   {
     id: 'project-2',
+    name: 'Java Revolution',
+    description: 'Un RPG narratif interactif inspiré du "Livre dont vous êtes le héros". Plongez dans la France révolutionnaire de 1789 avec un système de combat et de sauvegarde.',
+    image: javarevolution,
+    repo: 'https://github.com/ez1kl/java-revolution',
+    demo: 'https://ez1kl.github.io/java-revolution/',
+  },
+  {
+    id: 'project-3',
     name: 'Ransomware',
     description: 'Un projet en assembleur x86 qui simule le fonctionnement d\'un ransomware. Démonstration des techniques de chiffrement et de cybersécurité à des fins éducatives.',
     image: ransomware,
@@ -139,12 +149,12 @@ const projects = [
     demo: null,
   },
   {
-    id: 'project-3',
-    name: 'Java Revolution',
-    description: 'Un RPG narratif interactif inspiré du "Livre dont vous êtes le héros". Plongez dans la France révolutionnaire de 1789 avec un système de combat et de sauvegarde.',
-    image: nyeusi,
-    repo: 'https://github.com/ez1kl/java-revolution',
-    demo: 'https://ez1kl.github.io/java-revolution/',
+    id: 'project-4',
+    name: 'SoSafe',
+    description: 'Plateforme web de sensibilisation à la cybersécurité. Modules interactifs et scénarios éducatifs pour former les utilisateurs aux bonnes pratiques de sécurité informatique.',
+    image: sosafe,
+    repo: 'https://github.com/ez1kl/sosafe',
+    demo: null,
   },
 ];
 
