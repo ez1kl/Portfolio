@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -5,7 +6,7 @@ import {
 import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
-import { experiences } from '../constants';
+import { experiences, education } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { download, downloadHover, resume } from '../assets';
 import { textVariant } from '../utils/motion';
@@ -52,20 +53,50 @@ const ExperienceCard = ({ experience }) => (
 );
 
 const Experience = () => {
+  const [showEducation, setShowEducation] = useState(false);
+  const currentData = showEducation ? education : experiences;
+
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} sm:pl-16 pl-[2rem]`}>
-          Mon parcours professionnel
+          Mon parcours {showEducation ? 'scolaire' : 'professionnel'}
         </p>
         <h2 className={`${styles.sectionHeadText} sm:pl-16 pl-[2rem]`}>
-          Expériences.
+          {showEducation ? 'Formation.' : 'Expériences.'}
         </h2>
       </motion.div>
 
+      <div className="mt-10 flex justify-center">
+        <div className="inline-flex rounded-[10px] bg-jetLight p-1 shadow-lg gap-1">
+          <button
+            onClick={() => setShowEducation(false)}
+            className={`min-w-[180px] px-8 py-3 rounded-[8px] font-beckman font-bold text-[15px] 
+              transition-all duration-300 ease-in-out transform text-center whitespace-nowrap
+              ${
+              !showEducation
+                ? 'bg-taupe text-timberWolf shadow-md scale-[1.02]'
+                : 'text-taupe hover:text-timberWolf hover:scale-[1.01]'
+            }`}>
+            PROFESSIONNEL
+          </button>
+          <button
+            onClick={() => setShowEducation(true)}
+            className={`min-w-[180px] px-8 py-3 rounded-[8px] font-beckman font-bold text-[15px] 
+              transition-all duration-300 ease-in-out transform text-center whitespace-nowrap
+              ${
+              showEducation
+                ? 'bg-taupe text-timberWolf shadow-md scale-[1.02]'
+                : 'text-taupe hover:text-timberWolf hover:scale-[1.01]'
+            }`}>
+            SCOLAIRE
+          </button>
+        </div>
+      </div>
+
       <div className="mt-20 flex flex-col">
         <VerticalTimeline className="vertical-timeline-custom-line">
-          {experiences.map((experience, index) => (
+          {currentData.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}
           <VerticalTimelineElement

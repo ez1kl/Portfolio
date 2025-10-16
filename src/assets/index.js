@@ -6,8 +6,6 @@ import worldmap from './backgrounds/world-map.png';
 import logo from './logo/logo-black.png';
 import logotext from './logo/logo-text-black.png';
 
-import profile from './personal/profile.png';
-
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';
 import frontend from './icons/frontend.png';
@@ -39,9 +37,9 @@ import postgresql from './tech/postgresql.png';
 import rubyrails from './tech/rubyrails.png';
 
 import coverhunt from './company/coverhunt.png';
-import dcc from './company/dcc.png';
-import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
+import esgi from './company/ESGI.jpg';
+import iutblagnac from './company/iut-blagnac.png';
 
 import komikult from './projects/komikult.png';
 import leaderboard from './projects/leaderboard.png';
@@ -61,7 +59,6 @@ export {
   worldmap,
   logo,
   logotext,
-  profile,
   backend,
   ux,
   frontend,
@@ -101,7 +98,7 @@ export {
   nyeusi,
   space,
   coverhunt,
-  dcc,
-  kelhel,
   microverse,
+  esgi,
+  iutblagnac,
 };

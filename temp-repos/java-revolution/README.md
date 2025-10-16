@@ -180,7 +180,7 @@ mvn test
 
 **Yassine Badaoui** - [@ez1kl](https://github.com/ez1kl)
 
-Projet réalisé dans le cadre du projet annuel - ESGI Aix-en-Provence
+Projet réalisé dans le cadre du projet annuel -ESGI Aix-en-Provence
 
 ## Remerciements
 

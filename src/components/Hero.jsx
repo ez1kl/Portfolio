@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { profile, bwmap, worldmap, github } from '../assets';
+import { bwmap, worldmap, github } from '../assets';
 import linkedin from '../assets/icons/linkedin.svg';
 
 const Hero = () => {

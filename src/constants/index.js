@@ -28,9 +28,9 @@ import {
   nyeusi,
   space,
   coverhunt,
-  dcc,
-  kelhel,
   microverse,
+  esgi,
+  iutblagnac,
 } from '../assets';
 
 export const navLinks = [
@@ -123,6 +123,23 @@ const experiences = [
   },
 ];
 
+const education = [
+  {
+    title: 'BUT3 Informatique',
+    company_name: 'Toulouse IUT de Blagnac',
+    icon: iutblagnac,
+    iconBg: '#333333',
+    date: '2025 - 2026',
+  },
+  {
+    title: 'Bachelor Informatique',
+    company_name: 'ESGI Aix en Provence',
+    icon: esgi,
+    iconBg: '#333333',
+    date: '2023 - 2025',
+  },
+];
+
 const projects = [
   {
     id: 'project-1',
@@ -158,4 +175,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { services, technologies, experiences, education, projects };
